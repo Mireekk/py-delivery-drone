@@ -13,10 +13,10 @@ class BaseRobot:
         return f"Robot: {self.name}, Weight: {self.weight}"
 
     def go_forward(self, step: int = 1) -> None:
-        self.coords[-1] += step
+        self.coords[1] += step
 
     def go_back(self, step: int = 1) -> None:
-        self.coords[-1] -= step
+        self.coords[1] -= step
 
     def go_right(self, step: int = 1) -> None:
         self.coords[0] += step
